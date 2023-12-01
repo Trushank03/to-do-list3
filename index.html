@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set, compatibility, and viewport settings -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link to external stylesheet -->
+  <link rel='stylesheet' type='text/css' media="screen" href="style.css" />
+
+  <!-- Title of the web page -->
+  <title>Todo List App</title>
+</head>
+
+<body>
+  <!-- Main container for the entire Todo List App -->
+  <div class="wrapper">
+  
+    <!-- Input section for adding a new task -->
+    <div class="task-input">
+      <!-- Icon for visual representation -->
+      <ion-icon name="create-outline"></ion-icon>
+      
+      <!-- Input field for adding a new task -->
+      <input type="text" placeholder="Add a New Task + Enter" />
+    </div>
+    
+    <!-- Controls section for filtering tasks and clearing all tasks -->
+    <div class="controls">
+      <!-- Filters for displaying tasks based on status -->
+      <div class="filters">
+        <span class="active" id="all">All</span>
+        <span id="pending">Pending</span>
+        <span id="completed">Completed</span>
+      </div>
+      
+      <!-- Button to clear all tasks -->
+      <button class="clear-btn">Clear All</button>
+    </div>
+    
+    <!-- Task list container -->
+    <ul class="task-box"></ul>
+  </div>
+
+  <!-- JavaScript file for dynamic functionality -->
+  <script src="main.js"></script>
+</body>
+
+</html>
